@@ -2,26 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Discover Korea</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/bootstrap.js"></script>
 </head>
 <body>
 
-    <nav>
-
-    </nav>
-
-    <div class="container">
-
+<nav>
+    <div class="navbar navbar-expand bg-dark fixed-top justify-content-between">
+        <a href="#" class="navbar-brand text-white"><span class="bg-light text-dark px-2">Discover</span> Korea</a>
+        <ul class="navbar-nav ">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">Link 4</a>
+            </li>
+        </ul>
     </div>
 
-    <footer>
+</nav>
 
-    </footer>
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col description align-self-center">
+            <h1 class="display-1"> <strong class="bg-light text-dark px-2">Discover</strong> Korea</h1>
+            <p class="w-50">Experience the extraordinary atmosphere of South Korea,
+                a beautiful country, whose landscapes enchant with incomparable beauty, an unique cuisine surprises with
+                original flavours and cities attracts tourist from all over the world.</p>
+        </div>
+
+        <div id="south-korea" class="carousel slide" data-ride="carousel">
+
+            <ul class="carousel-indicators">
+                <li data-target="#south-korea" data-slide-to="0" class="active"></li>
+                <li data-target="#south-korea" data-slide-to="1"></li>
+                <li data-target="#south-korea" data-slide-to="2"></li>
+                <li data-target="#south-korea" data-slide-to="3"></li>
+            </ul>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/background-1.jpg" alt="slide-1" class="w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/background-2.jpg" alt="slide-2" class="w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/background-3.jpg" alt="slide-3" class="w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/background-4.jpg" alt="slide-4" class="w-100">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <img src="" alt="">
+        </div>
+        <div class="col-4">
+            <img src="" alt="">
+        </div>
+        <div class="col-4">
+            <img src="" alt="">
+        </div>
+    </div>
+</div>
+
+<footer>
+
+</footer>
 
 </body>
 </html>
