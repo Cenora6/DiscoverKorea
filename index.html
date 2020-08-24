@@ -19,6 +19,8 @@
 </head>
 <body>
 
+<!-- Navigation -->
+
 <nav>
     <div class="navbar navbar-expand bg-dark fixed-top justify-content-between">
         <a href="#" class="navbar-brand text-white">
@@ -30,7 +32,7 @@
                 <a href="#highlights" class="nav-link text-white">Highlights</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link text-white">Link 2</a>
+                <a href="#food-drinks" class="nav-link text-white">Popular food & drinks</a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link text-white">Link 3</a>
@@ -43,6 +45,8 @@
 
 </nav>
 
+<!-- Header's carousel -->
+
 <header id="header">
     <div class="container-fluid">
         <div class="row">
@@ -54,7 +58,6 @@
             </div>
 
             <div id="south-korea" class="carousel slide" data-ride="carousel">
-
                 <ul class="carousel-indicators">
                     <li data-target="#south-korea" data-slide-to="0" class="active"></li>
                     <li data-target="#south-korea" data-slide-to="1"></li>
@@ -81,26 +84,27 @@
     </div>
 </header>
 
+<!-- Highlights -->
+
 <section id="highlights" class="highlights bg-white">
     <div class="container bg-light shadow my-5">
         <div class="highlights-container row py-5 border">
             <div class="col-md-3 pl-5">
                 <div class="nav flex-column nav-pills nav-pills-custom" id="korea-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link mb-3 px-3 py-3 shadow active" id="korea-pills-tab-1" data-toggle="pill" href="#korea-pills-1" role="tab" aria-controls="korea-pills-1" aria-selected="true">
+                    <a class="nav-link mb-3 p-3 shadow active" id="korea-pills-tab-1" data-toggle="pill" href="#korea-pills-1" role="tab" aria-controls="korea-pills-1" aria-selected="true">
                         <span class="small text-uppercase">Gyeongbokgung Palace</span></a>
-                    <a class="nav-link mb-3 px-3 py-3 shadow" id="korea-pills-tab-2" data-toggle="pill" href="#korea-pills-2" role="tab" aria-controls="korea-pills-2" aria-selected="false">
+                    <a class="nav-link mb-3 p-3 shadow" id="korea-pills-tab-2" data-toggle="pill" href="#korea-pills-2" role="tab" aria-controls="korea-pills-2" aria-selected="false">
                         <span class="small text-uppercase">Bukchon Hanok Village</span></a>
-                    <a class="nav-link mb-3 px-3 py-3 shadow" id="korea-pills-tab-3" data-toggle="pill" href="#korea-pills-3" role="tab" aria-controls="korea-pills-3" aria-selected="false">
+                    <a class="nav-link mb-3 p-3 shadow" id="korea-pills-tab-3" data-toggle="pill" href="#korea-pills-3" role="tab" aria-controls="korea-pills-3" aria-selected="false">
                         <span class="small text-uppercase">Myeongdong</span></a>
-                    <a class="nav-link mb-3 px-3 py-3 shadow" id="korea-pills-tab-4" data-toggle="pill" href="#korea-pills-4" role="tab" aria-controls="korea-pills-4" aria-selected="false">
+                    <a class="nav-link mb-3 p-3 shadow" id="korea-pills-tab-4" data-toggle="pill" href="#korea-pills-4" role="tab" aria-controls="korea-pills-4" aria-selected="false">
                         <span class="small text-uppercase">Seongsan Sunrise Peak</span></a>
-                    <a class="nav-link mb-3 px-3 py-3 shadow" id="korea-pills-tab-5" data-toggle="pill" href="#korea-pills-5" role="tab" aria-controls="korea-pills-5" aria-selected="false">
+                    <a class="nav-link mb-3 p-3 shadow" id="korea-pills-tab-5" data-toggle="pill" href="#korea-pills-5" role="tab" aria-controls="korea-pills-5" aria-selected="false">
                         <span class="small text-uppercase">Namsan Seoul Tower</span></a>
-                    <a class="nav-link mb-3 px-3 py-3 shadow" id="korea-pills-tab-6" data-toggle="pill" href="#korea-pills-6" role="tab" aria-controls="korea-pills-6" aria-selected="false">
+                    <a class="nav-link mb-3 p-3 shadow" id="korea-pills-tab-6" data-toggle="pill" href="#korea-pills-6" role="tab" aria-controls="korea-pills-6" aria-selected="false">
                         <span class="small text-uppercase">Busan</span></a>
                 </div>
             </div>
-
             <div class="col-md-9 pr-5">
                 <div class="tab-content h-100" id="v-pills-tabContent">
                     <div class="tab-pane fade rounded show active p-4 h-100" id="korea-pills-1" role="tabpanel" aria-labelledby="korea-pills-tab-1">
@@ -200,11 +204,112 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<section id="food-drinks" class="food-drinks bg-dark py-5">
+    <div class="container">
+        <div class="card-deck">
+            <div class="card pb-5">
+                <img class="card-img-top border" src="./assets/food-1.jpg" alt="samgyetang">
+                <div class="card-body">
+                    <h4 class="card-title">Samgyetang</h4>
+                    <p class="card-text small">A common dish particularly during the summer, samgyetang is a traditional soup
+                        made of chicken, garlic, rice, scallion, Korean jujube, Korean ginseng, and spices. It is known
+                        to have a high nutritional value. Not only is it known for its healthy contents but it also is
+                        popular simply for its creamy and meaty flavor.</p>
+                    <div class="heart m-n3"></div>
+                </div>
+            </div>
+            <div class="card pb-5">
+                <img class="card-img-top border" src="./assets/food-2.jpg" alt="bibimbap">
+                <div class="card-body">
+                    <h4 class="card-title">Bibimbap</h4>
+                    <p class="card-text small">Bibimbap is essentially a bowl of mixed ingredients including, but not limited
+                        to, rice, namul (seasoned and sautéed vegetables), mushrooms, beef, soy sauce, gochujang (chili
+                        pepper paste), and a fried egg. The ingredients found in bibimbap vary by region, and the most
+                        famous versions of the dish are found in Jeonju, Tongyeong, and Jinju.</p>
+                    <div class="heart m-n3"></div>
+                </div>
+            </div>
+            <div class="card pb-5">
+                <img class="card-img-top border" src="./assets/food-3.jpg" alt="kimchi">
+                <div class="card-body">
+                    <h4 class="card-title">Kimchi (fermented vegetables)</h4>
+                    <p class="card-text small">One of the oldest and probably the most essential dishes in Korean cuisine,
+                        kimchi is a spicy and sour dish made up of fermented vegetables. It is prepared with various
+                        kinds of ingredients, but the most common main ingredient is cabbage. Kimchi is popular among
+                        foreigners for its unique flavor, as well as its high nutritional value, fiber content and low
+                        calorie content. However, for Koreans, it is most popular due to its significant cultural value.
+                        Without kimchi, dinner is considered incomplete.</p>
+                    <div class="heart m-n3"></div>
+                </div>
+            </div>
+            <div class="card pb-5">
+                <img class="card-img-top border" src="./assets/food-4.jpeg" alt="japchae">
+                <div class="card-body">
+                    <h4 class="card-title">Japchae (stir-fried noodles)</h4>
+                    <p class="card-text small">Often served as a side dish during lunch or dinner, japchae is a traditional
+                        Korean noodle dish made up of stir-fried sweet potato, thinly shredded vegetables, beef, and
+                        a hint of soy sauce and sugar. Depending on the chef, additional ingredients like mushrooms are
+                        added to the mix. Japchae is known for its sweet and flavorful taste and its soft yet slightly
+                        chewy texture.</p>
+                    <div class="heart m-n3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-deck mt-5">
+            <div class="card pb-5">
+                <img class="card-img-top border" src="./assets/drink-1.jpg" alt="sikye">
+                <div class="card-body">
+                    <h4 class="card-title">Sikye</h4>
+                    <p class="card-text small">Sikye is a traditional Korean rice drink that’s as sweet as it is
+                        traditional – so sweet, in fact, that it’s often served as a dessert! This Korean drink
+                        contains cooked rice, which gives it an interesting texture as you get to the bottom, and has
+                        been served in Korean for centuries as a traditional end to a meal.</p>
+                    <div class="heart m-n3"></div>
+                </div>
+            </div>
+            <div class="card pb-5">
+                <img class="card-img-top border" src="./assets/drink-2.jpg" alt="soju">
+                <div class="card-body">
+                    <h4 class="card-title">Soju</h4>
+                    <p class="card-text small">Korean soju is distilled from fermented rice, or optionally wheat, barley,
+                        sweet potatoes, or tapioca. It is usually enjoyed well-chilled, served in small traditional
+                        glasses, but Koreans also prefer to drop a shot of soju in beer. Apart from the classic type,
+                        it also comes in many fruit-flavored versions.</p>
+                    <div class="heart m-n3"></div>
+                </div>
+            </div>
+            <div class="card pb-5">
+                <img class="card-img-top border" src="./assets/drink-3.jpg" alt="makgeolli">
+                <div class="card-body">
+                    <h4 class="card-title">Makgeolli</h4>
+                    <p class="card-text small">Makgeolli is the oldest Korean liquor that dates back to the 10th century.
+                        It is usually made from rice which is fermented with nuruk—traditional Korean starter.
+                        The fermentation process produces a lightly fizzy drink with a typical milky appearance and
+                        a slightly sweet flavor.</p>
+                    <div class="heart m-n3"></div>
+                </div>
+            </div>
+            <div class="card pb-5">
+                <img class="card-img-top border" src="./assets/drink-4.jpg" alt="ginseang-tea">
+                <div class="card-body">
+                    <h4 class="card-title">Ginseang tea</h4>
+                    <p class="card-text small">Ginseng tea is a traditional Korean tea made with ginseng. While it is
+                        called a tea, ginseng tea does not contain tea leaves. It is a herbal tea infusion made out of
+                        the ginseng plant's root. In Korea ginseng tea is far more than a drink. The Korean culture has
+                        a long history of treating food and drink as medicine; spices and herbs are regularly used to
+                        treat sickness and ailments.</p>
+                    <div class="heart m-n3"></div>
+                </div>
+            </div>
+        </div>
 
 
     </div>
 </section>
-
 
 <footer>
 
