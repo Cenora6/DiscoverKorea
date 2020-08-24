@@ -8,8 +8,14 @@
 }
 
 .navbar-brand {
-    font-size: .8rem;
+    transition: .3s ease-in-out;
     font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+.navbar-brand img {
+    transition: .3s ease-in-out;
+    width: 2rem;
 }
 
 .carousel {
@@ -36,6 +42,8 @@
 }
 
 .carousel-item {
+    position: relative;
+    opacity: .7;
     height: 60rem;
 }
 
@@ -43,7 +51,103 @@
     position: relative;
 }
 
-.carousel-item {
-    position: relative;
-    opacity: .7;
+section {
 }
+
+.why {
+    /*background: #FFFF url("./../assets/decoration.png") no-repeat 85% 100%;*/
+}
+
+.why .why-container {
+    /*opacity: .8;*/
+    position: relative;
+}
+
+.why .why-container:after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    right: 0;
+    opacity: .1;
+    bottom: 0;
+    background: url("./../assets/decoration.png") no-repeat;
+
+}
+
+.why .nav-pills-custom .nav-link:first-of-type.active {
+    background: #262A33;
+}
+
+.why .nav-pills-custom .nav-link:nth-of-type(2).active {
+    background: #444957;
+}
+
+.why .nav-pills-custom .nav-link:nth-of-type(3).active {
+    background: #697184;
+}
+
+.why .nav-pills-custom .nav-link:last-of-type.active {
+    background: #878a97;
+}
+
+.why .nav-pills-custom .nav-link.active {
+    color: #fff;
+}
+
+.why .nav-pills-custom .nav-link {
+    color: black;
+    letter-spacing: .1rem;
+    line-height: 1.5rem;
+    font-family: 'EB Garamond', serif;
+    position: relative;
+}
+
+.why h4 {
+    font-size: 2rem;
+    font-family: 'Satisfy', cursive;
+}
+
+.why p {
+    font-family: 'EB Garamond', serif;
+}
+
+/*.why-container > div:nth-of-type(even) {*/
+/*    background-color: #000000;*/
+/*}*/
+
+/*.why-container > div:nth-of-type(odd) {*/
+/*    background-color: #8d8d8d;*/
+/*}*/
+
+/*.why p {*/
+/*    color: white;*/
+/*    letter-spacing: .1rem;*/
+/*    line-height: 1.5rem;*/
+/*    font-family: 'EB Garamond', serif;*/
+/*}*/
+
+/*.why img {*/
+/*    border: .3rem solid white;*/
+/*}*/
+
+/*.why .nav-item {*/
+/*    color: white;*/
+/*    font-size: 2rem;*/
+/*    font-family: 'Raleway Dots', cursive;*/
+/*}*/
+
+/*.why .nav-item:active {*/
+/*    color: white;*/
+/*}*/
+
+
+/*.why .tab-pane:first-of-type {*/
+/*    background: #262A33;*/
+/*    border: none;*/
+/*}*/
+
+
+/*.why .nav-link {*/
+/*    height: 5rem;*/
+/*}*/

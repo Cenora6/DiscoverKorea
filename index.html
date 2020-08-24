@@ -10,17 +10,21 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
 
 <nav>
     <div class="navbar navbar-expand bg-dark fixed-top justify-content-between">
-        <a href="#" class="navbar-brand text-white"><span class="bg-light text-dark px-2">Discover</span> Korea</a>
+        <a href="#" class="navbar-brand text-white">
+            <img src="assets/icon.png" alt="logo" class="logo">
+            <span class="bg-light text-dark px-2"> Discover</span> Korea
+        </a>
         <ul class="navbar-nav ">
             <li class="nav-item">
                 <a href="#" class="nav-link text-white">Link 1</a>
@@ -39,55 +43,136 @@
 
 </nav>
 
-<div class="container-fluid">
+<header id="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col description align-self-center">
+                <h1 class="display-1"> <strong class="bg-light text-dark px-2">Discover</strong> Korea</h1>
+                <p class="w-50">Experience the extraordinary atmosphere of South Korea,
+                    a beautiful country, whose landscapes enchant with incomparable beauty, an unique cuisine surprises with
+                    original flavours and cities attracts tourist from all over the world.</p>
+            </div>
 
-    <div class="row">
-        <div class="col description align-self-center">
-            <h1 class="display-1"> <strong class="bg-light text-dark px-2">Discover</strong> Korea</h1>
-            <p class="w-50">Experience the extraordinary atmosphere of South Korea,
-                a beautiful country, whose landscapes enchant with incomparable beauty, an unique cuisine surprises with
-                original flavours and cities attracts tourist from all over the world.</p>
+            <div id="south-korea" class="carousel slide" data-ride="carousel">
+
+                <ul class="carousel-indicators">
+                    <li data-target="#south-korea" data-slide-to="0" class="active"></li>
+                    <li data-target="#south-korea" data-slide-to="1"></li>
+                    <li data-target="#south-korea" data-slide-to="2"></li>
+                    <li data-target="#south-korea" data-slide-to="3"></li>
+                </ul>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/background-1.jpg" alt="slide-1" class="w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/background-2.jpg" alt="slide-2" class="w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/background-3.jpg" alt="slide-3" class="w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/background-4.jpg" alt="slide-4" class="w-100">
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+</header>
 
-        <div id="south-korea" class="carousel slide" data-ride="carousel">
+<section id="why" class="why bg-white">
+    <div class="container bg-light shadow my-5">
+        <div class="why-container row py-5 border">
+            <div class="col-md-3 pl-5">
+                <!-- Tabs nav -->
+                <div class="nav flex-column nav-pills nav-pills-custom" id="korea-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link mb-3 px-3 py-5 shadow active" id="korea-pills-tab-1" data-toggle="pill" href="#korea-pills-1" role="tab" aria-controls="korea-pills-1" aria-selected="true">
+                        <span class="small text-uppercase">Personal information</span></a>
 
-            <ul class="carousel-indicators">
-                <li data-target="#south-korea" data-slide-to="0" class="active"></li>
-                <li data-target="#south-korea" data-slide-to="1"></li>
-                <li data-target="#south-korea" data-slide-to="2"></li>
-                <li data-target="#south-korea" data-slide-to="3"></li>
-            </ul>
+                    <a class="nav-link mb-3 px-3 py-5 shadow" id="korea-pills-tab-2" data-toggle="pill" href="#korea-pills-2" role="tab" aria-controls="korea-pills-2" aria-selected="false">
+                        <span class="small text-uppercase">Bookings</span></a>
 
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/background-1.jpg" alt="slide-1" class="w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/background-2.jpg" alt="slide-2" class="w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/background-3.jpg" alt="slide-3" class="w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/background-4.jpg" alt="slide-4" class="w-100">
+                    <a class="nav-link mb-3 px-3 py-5 shadow" id="korea-pills-tab-3" data-toggle="pill" href="#korea-pills-3" role="tab" aria-controls="korea-pills-3" aria-selected="false">
+                        <span class="small text-uppercase">Reviews</span></a>
+
+                    <a class="nav-link mb-3 px-3 py-5 shadow" id="korea-pills-tab-4" data-toggle="pill" href="#korea-pills-4" role="tab" aria-controls="korea-pills-4" aria-selected="false">
+                        <span class="small text-uppercase">Confirm booking</span></a>
                 </div>
             </div>
 
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col-4">
-            <img src="" alt="">
+            <div class="col-md-9 pr-5">
+                <!-- Tabs content -->
+                <div class="tab-content h-100" id="v-pills-tabContent">
+                    <div class="tab-pane fade rounded show active p-5 h-100" id="korea-pills-1" role="tabpanel" aria-labelledby="korea-pills-tab-1">
+                        <h4 class="text-dark px-2 pb-5"><span class="bg-dark text-white px-2">Integer tortor ante,</span> volutpsa et</h4>
+                        <div class="row">
+                            <div class="col-8">
+                                <img src="assets/photo-1.jpg" alt="why1" class="w-100 rounded img-thumbnail">
+                            </div>
+                            <div class="col-4">
+                                <p class="text-dark font-italic"> Aenean ante nisl, interdum nec urna non, vestibulum vehicula elit. Vivamus mollis
+                                    sapien lorem, sed fringilla sapien lobortis quis. Quisque mauris mi, congue quis massa id, tempus
+                                    fringilla ante. Suspendisse ullamcorper dolor eu hendrerit hendrerit. Ut sapien risus, blandit vel
+                                    rhoncus et, imperdiet vel lorem. Aliquam non dignissim purus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade rounded p-5 h-100" id="korea-pills-2" role="tabpanel" aria-labelledby="korea-pills-tab-2">
+                        <h4 class="text-dark px-2 pb-5"><span class="bg-dark text-white px-2">Integer tortor ante,</span> volutpat a massa et</h4>
+                        <div class="row">
+                            <div class="col-8">
+                                <img src="assets/photo-2.jpg" alt="why2" class="w-100 rounded img-thumbnail">
+                            </div>
+                            <div class="col-4">
+                                <p class="text-dark font-italic"> Aenean ante nisl, interdum nec urna non, vestibulum vehicula elit. Vivamus mollis
+                                    sapien lorem, sed fringilla sapien lobortis quis. Quisque mauris mi, congue quis massa id, tempus
+                                    fringilla ante. Suspendisse ullamcorper dolor eu hendrerit hendrerit. Ut sapien risus, blandit vel
+                                    rhoncus et, imperdiet vel lorem. Aliquam non dignissim purus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade rounded p-5 h-100" id="korea-pills-3" role="tabpanel" aria-labelledby="korea-pills-tab-3">
+                        <h4 class="text-dark px-2 pb-5"><span class="bg-dark text-white px-2">Integer tortor ante,</span> volutpat a massa et</h4>
+                        <div class="row">
+                            <div class="col-8">
+                                <img src="assets/photo-3.jpg" alt="why3" class="w-100 rounded img-thumbnail">
+                            </div>
+                            <div class="col-4">
+                                <p class="text-dark font-italic"> Aenean ante nisl, interdum nec urna non, vestibulum vehicula elit. Vivamus mollis
+                                    sapien lorem, sed fringilla sapien lobortis quis. Quisque mauris mi, congue quis massa id, tempus
+                                    fringilla ante. Suspendisse ullamcorper dolor eu hendrerit hendrerit. Ut sapien risus, blandit vel
+                                    rhoncus et, imperdiet vel lorem. Aliquam non dignissim purus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade rounded p-5 h-100" id="korea-pills-4" role="tabpanel" aria-labelledby="korea-pills-tab-4">
+                        <h4 class="text-dark px-2 pb-5"><span class="bg-dark text-white px-2">Integer tortor ante,</span> volutpat a massa et</h4>
+                        <div class="row">
+                            <div class="col-8">
+                                <img src="assets/photo-4.jpg" alt="why4" class="w-100 rounded img-thumbnail">
+                            </div>
+                            <div class="col-4">
+                                <p class="text-dark font-italic"> Aenean ante nisl, interdum nec urna non, vestibulum vehicula elit. Vivamus mollis
+                                    sapien lorem, sed fringilla sapien lobortis quis. Quisque mauris mi, congue quis massa id, tempus
+                                    fringilla ante. Suspendisse ullamcorper dolor eu hendrerit hendrerit. Ut sapien risus, blandit vel
+                                    rhoncus et, imperdiet vel lorem. Aliquam non dignissim purus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-4">
-            <img src="" alt="">
-        </div>
-        <div class="col-4">
-            <img src="" alt="">
-        </div>
+
+
     </div>
-</div>
+</section>
+
 
 <footer>
 
