@@ -28,7 +28,7 @@ function changeNavigationColor() {
 
     const difference = foodSection.offsetHeight+ foodSection.offsetTop;
 
-    if (window.pageYOffset >= foodSection.offsetTop && window.pageYOffset < difference) {
+    if (window.pageYOffset + 48 > foodSection.offsetTop && window.pageYOffset < difference) {
         navbar.classList.remove('bg-dark');
         navbar.classList.add('bg-light');
         navBrand.classList.remove('text-white');
