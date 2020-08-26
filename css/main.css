@@ -184,8 +184,8 @@ header .carousel-item img {
 }
 
 .heart.is-active {
-     transition-duration: 1s;
-     background-position: -175rem 0;
+    transition-duration: 1s;
+    background-position: -175rem 0;
 }
 
 .interesting .carousel-item.active,
@@ -219,23 +219,8 @@ header .carousel-item img {
 }
 
 .numbers {
-    position: relative;
     height: 20rem;
     background: url("./../assets/numbers-background.jpg") no-repeat fixed center;
-    background-size: cover;
-}
-
-.numbers:after {
-    content: "";
-    background-color: #343A40;
-    opacity: .7;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
 }
 
 .numbers .numbers-col {
@@ -346,4 +331,64 @@ header .carousel-item img {
     top: -2rem;
     font-family: 'EB Garamond', serif;
     width: 10rem;
+}
+
+.parallax {
+    position: relative;
+    background-size: cover;
+}
+
+.parallax:after {
+    content: "";
+    background-color: #343A40;
+    opacity: .7;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.newsletter {
+    height: 20rem;
+    background: url("./../assets/form-background.jpg") no-repeat fixed center;
+}
+
+.newsletter .container {
+    position: relative;
+    z-index: 100;
+}
+
+.newsletter h2 {
+    font-family: 'Raleway Dots', cursive;
+}
+
+.newsletter .decoration-text {
+    font-family: 'EB Garamond', serif;
+    letter-spacing: .1rem;
+}
+
+.newsletter input {
+    font-family: 'EB Garamond', serif;
+    font-size: .8rem;
+    outline: none;
+    letter-spacing: .1rem;
+}
+
+.newsletter input::placeholder {
+    opacity: .8;
+}
+
+.newsletter button {
+    font-family: 'EB Garamond', serif;
+    letter-spacing: .1rem;
+    outline: none;
+}
+
+.newsletter .newsletter-alert {
+    top: 0;
+    font-family: 'EB Garamond', serif;
+
 }

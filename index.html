@@ -371,7 +371,7 @@
 
 <!-- Numbers/info -->
 
-<section id="numbers" class="numbers shadow border border-dark">
+<section id="numbers" class="numbers parallax shadow border border-dark">
     <div class="container my-5">
         <div class="row">
             <div class="numbers-col col-3 d-flex flex-column align-items-center">
@@ -500,9 +500,34 @@
 </section>
 
 
-<section id="newsletter" class="newsletter bg-dark py-5">
-    <div class="container-fluid">
-
+<section id="newsletter" class="newsletter parallax bg-dark py-5 shadow border border-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 d-flex flex-column justify-content-center px-2">
+                <h2 class="display-4">
+                    <small class="bg-dark text-white px-2">Want to</small> <br>
+                    <span class="bg-light text-dark px-2"> know more?</span>
+                </h2>
+                <small class="decoration-text w-50 text-white">Subscribe to our newsletter and receive
+                    the recent news about South Korea.</small>
+            </div>
+            <div class="col-8 d-flex flex-column justify-content-center align-items-center position-relative">
+                <form class="d-flex w-100 justify-content-center needs-validation position-relative" novalidate>
+                    <div class="form-group m-0 d-flex w-75">
+                        <label for="email"></label>
+                        <input type="email" class="form-control rounded-0 shadow w-100 border text-uppercase"
+                               placeholder="enter your email address" id="email" required>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-sm text-uppercase rounded-0">Send</button>
+                </form>
+                <div class="newsletter-alert alert alert-success position-absolute fade text-uppercase small">
+                    <strong>Thank you! </strong> Your email address has been added to our newsletter base.
+                </div>
+                <div class="newsletter-alert alert alert-danger position-absolute fade text-uppercase small">
+                    <strong>Wrong email! </strong> Please try again.
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -510,6 +535,5 @@
 <footer>
 
 </footer>
-
 </body>
 </html>
