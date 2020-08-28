@@ -1,6 +1,6 @@
-![](src/assets/preview/preview-1.png)
-![](src/assets/preview/preview-2.png)
-![](src/assets/preview/preview-3.png)
+![](assets/preview/preview-1.png)
+![](assets/preview/preview-2.png)
+![](assets/preview/preview-3.png)
 
 # Discover Korea
 
