@@ -24,4 +24,4 @@ The idea for the project was based on the interests in South Korean culture. If 
 - then you can open the website in the browser
 
 ### Preview
-Check the preview here: cenora6.github.io/discoverkorea/
+Check the preview here: https://cenora6.github.io/DiscoverKorea/
