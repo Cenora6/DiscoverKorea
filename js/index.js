@@ -2,6 +2,7 @@
     window.addEventListener('load', function() {
         like();
         submit();
+        scrollNavigation();
     });
 
     window.addEventListener('scroll', function() {
@@ -91,7 +92,15 @@
         })
     }
 
-
+    function scrollNavigation() {
+        document.querySelectorAll(".scrollNav a").forEach( link => link.addEventListener('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                let hash = this.hash;
+                window.scroll({top: document.querySelector(hash).offsetTop, behavior: 'smooth'});
+            }
+        }));
+    }
 })();
 
 

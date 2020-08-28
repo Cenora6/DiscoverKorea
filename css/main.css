@@ -390,5 +390,61 @@ header .carousel-item img {
 .newsletter .newsletter-alert {
     top: 0;
     font-family: 'EB Garamond', serif;
+}
 
+footer .icons i {
+    font-size: 2rem;
+    opacity: .5;
+    cursor: pointer;
+    transition: .5s;
+}
+
+footer h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+}
+
+footer p {
+    font-family: 'EB Garamond', serif;
+}
+
+footer .icons i:hover {
+    opacity: .2;
+}
+
+footer .ig-images img {
+    object-fit: cover;
+    height: 8rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+footer .ig-images img:hover {
+    opacity: .5;
+}
+
+ul .link {
+    position: relative;
+    text-decoration: none;
+
+}
+
+ul .link:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: .05rem;
+    margin-top: .2rem;
+    right: 0;
+    background: #fff;
+    transition: width 1s ease;
+    -webkit-transition: width .5s ease;
+}
+
+ul .link:hover:after{
+    width: 100%;
+    left: 0;
+    background: #fff;
 }
