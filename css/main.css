@@ -1,3 +1,16 @@
+body::-webkit-scrollbar {
+    width: 11px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #343A40;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #FFF ;
+    border-radius: .5rem;
+    border: .2rem solid #343A40;
+}
+
 .container-fluid {
     background-color: #000000;
 }
