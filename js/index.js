@@ -10,7 +10,6 @@
         changeNavigationColor()
     });
 
-
     function scrollFunction() {
         const navBrand = document.querySelector("nav .navbar-brand");
         const logo = document.querySelector("nav .logo");
@@ -34,7 +33,9 @@
 
         if (window.pageYOffset + 48 > foodSection.offsetTop && window.pageYOffset < difference) {
             navbar.classList.remove('bg-dark');
+            navbar.classList.remove('navbar-dark');
             navbar.classList.add('bg-light');
+            navbar.classList.add('navbar-light');
             navBrand.classList.remove('text-white');
             navBrand.classList.add('text-dark');
             navBrand.querySelector('span').classList.remove('bg-light');
@@ -45,7 +46,9 @@
             navLinks.forEach(element => element.classList.add('text-dark'));
         } else {
             navbar.classList.remove('bg-light');
+            navbar.classList.remove('navbar-light');
             navbar.classList.add('bg-dark');
+            navbar.classList.add('navbar-dark');
             navLinks.forEach(element => element.classList.remove('text-dark'));
             navLinks.forEach(element => element.classList.add('text-white'));
             navBrand.classList.remove('text-dark');
@@ -92,6 +95,8 @@
         })
     }
 
+    // scroll navigation
+
     function scrollNavigation() {
         document.querySelectorAll(".scrollNav a").forEach( link => link.addEventListener('click', function(event) {
             if (this.hash !== "") {
@@ -101,6 +106,5 @@
             }
         }));
     }
+
 })();
-
-

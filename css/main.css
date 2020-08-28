@@ -34,8 +34,19 @@ header .carousel {
 .description h1 {
     color: white;
     z-index: 1;
-    font-size: 8rem;
     font-family: 'Raleway Dots', cursive;
+}
+
+@media only screen and (min-width: 1024px) {
+    .display-1 {
+        font-size: 8rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .display-1 {
+        font-size: 4rem;
+    }
 }
 
 .description p {
@@ -45,10 +56,20 @@ header .carousel {
     font-family: 'EB Garamond', serif;
 }
 
+header {
+    min-height: 60rem;
+}
+
+header .carousel-inner > .carousel-item > img,
+.carousel-inner > .carousel-item > a > img {
+    min-height: 75rem;
+    object-fit: cover;
+}
+
 header .carousel-item {
     position: relative;
     opacity: .7;
-    height: 60rem;
+    /*height: 60rem;*/
 }
 
 header .carousel-item img {
@@ -132,6 +153,10 @@ header .carousel-item img {
     color: #007bff;
 }
 
+.food-drinks .card {
+    min-width: 12rem;
+}
+
 .food-drinks .card:before {
     content: "";
     position: absolute;
@@ -198,17 +223,6 @@ header .carousel-item img {
     position: relative;
 }
 
-.interesting .container:after {
-    content: "";
-    width: 10%;
-    height: 100%;
-    position: absolute;
-    background: url("./../assets/wow.png") no-repeat;
-    transform: rotate(10deg);
-    right: 0;
-    top: 10%;
-}
-
 .interesting h4 {
     font-family: 'Satisfy', cursive;
 }
@@ -219,7 +233,6 @@ header .carousel-item img {
 }
 
 .numbers {
-    height: 20rem;
     background: url("./../assets/numbers-background.jpg") no-repeat fixed center;
 }
 
@@ -269,6 +282,7 @@ header .carousel-item img {
 .entertainment .entertainment-img img {
     max-height: 15em;
     object-fit: cover;
+    height: 100%;
 }
 
 .entertainment .entertainment-img:after {
@@ -285,24 +299,32 @@ header .carousel-item img {
     transition: 1s;
 }
 
+.entertainment strong {
+    display: none;
+}
+
 .entertainment .entertainment-img:hover:after {
     opacity: .7;
 }
 
-.entertainment .entertainment-img:hover > strong {
-    opacity: 1;
-}
+@media only screen and (min-width: 1024px) {
 
-.entertainment strong {
-    position: absolute;
-    margin: auto;
-    z-index: 5;
-    letter-spacing: .1rem;
-    font-family: 'EB Garamond', serif;
-    line-height: 1rem;
-    cursor: pointer;
-    transition: 1s;
-    opacity: 0;
+    .entertainment .entertainment-img:hover > strong {
+        opacity: 1;
+    }
+
+    .entertainment strong {
+        display: block;
+        position: absolute;
+        margin: auto;
+        z-index: 5;
+        letter-spacing: .1rem;
+        font-family: 'EB Garamond', serif;
+        line-height: 1rem;
+        cursor: pointer;
+        transition: 1s;
+        opacity: 0;
+    }
 }
 
 .entertainment h4 {
@@ -352,7 +374,6 @@ header .carousel-item img {
 }
 
 .newsletter {
-    height: 20rem;
     background: url("./../assets/form-background.jpg") no-repeat fixed center;
 }
 
@@ -392,6 +413,12 @@ header .carousel-item img {
     font-family: 'EB Garamond', serif;
 }
 
+@media only screen and (max-width: 1024px) {
+    .newsletter .newsletter-alert {
+        top: 2.5rem;
+    }
+}
+
 footer .icons i {
     font-size: 2rem;
     opacity: .5;
@@ -415,7 +442,8 @@ footer .icons i:hover {
 
 footer .ig-images img {
     object-fit: cover;
-    height: 8rem;
+    height: 8em;
+    width: 8em;
     cursor: pointer;
     transition: .5s;
 }

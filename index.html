@@ -23,12 +23,17 @@
 <!-- Navigation -->
 
 <nav>
-    <div class="navbar navbar-expand bg-dark fixed-top justify-content-between">
+    <div class="navbar navbar-expand-md bg-dark navbar-dark fixed-top justify-content-between">
         <a href="#" class="navbar-brand text-white">
             <img src="assets/icon.png" alt="logo" class="logo">
             <span class="bg-light text-dark px-2"> Discover</span> Korea
         </a>
-        <div class="scrollNav">
+
+        <button class="navbar-toggler show" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse scrollNav" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a href="#highlights" class="nav-link text-white link mx-2">Highlights</a>
@@ -96,32 +101,32 @@
 
 <section id="highlights" class="highlights bg-white">
     <div class="container bg-light shadow my-5">
-        <div class="highlights-container row py-5 border">
-            <div class="col-md-3 pl-5">
+        <div class="highlights-container row py-5 px-3 border">
+            <div class="col-lg-3 col-md-4 px-lg-5">
                 <div class="nav flex-column nav-pills nav-pills-custom" id="korea-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link mb-3 p-3 shadow active" id="korea-pills-tab-1" data-toggle="pill" href="#korea-pills-1" role="tab" aria-controls="korea-pills-1" aria-selected="true">
+                    <a class="nav-link mb-3 p-4 shadow active" id="korea-pills-tab-1" data-toggle="pill" href="#korea-pills-1" role="tab" aria-controls="korea-pills-1" aria-selected="true">
                         <span class="small text-uppercase">Gyeongbokgung Palace</span></a>
-                    <a class="nav-link mb-3 p-3 shadow" id="korea-pills-tab-2" data-toggle="pill" href="#korea-pills-2" role="tab" aria-controls="korea-pills-2" aria-selected="false">
+                    <a class="nav-link mb-3 p-4 shadow" id="korea-pills-tab-2" data-toggle="pill" href="#korea-pills-2" role="tab" aria-controls="korea-pills-2" aria-selected="false">
                         <span class="small text-uppercase">Bukchon Hanok Village</span></a>
-                    <a class="nav-link mb-3 p-3 shadow" id="korea-pills-tab-3" data-toggle="pill" href="#korea-pills-3" role="tab" aria-controls="korea-pills-3" aria-selected="false">
+                    <a class="nav-link mb-3 p-4 shadow" id="korea-pills-tab-3" data-toggle="pill" href="#korea-pills-3" role="tab" aria-controls="korea-pills-3" aria-selected="false">
                         <span class="small text-uppercase">Myeongdong</span></a>
-                    <a class="nav-link mb-3 p-3 shadow" id="korea-pills-tab-4" data-toggle="pill" href="#korea-pills-4" role="tab" aria-controls="korea-pills-4" aria-selected="false">
+                    <a class="nav-link mb-3 p-4 shadow" id="korea-pills-tab-4" data-toggle="pill" href="#korea-pills-4" role="tab" aria-controls="korea-pills-4" aria-selected="false">
                         <span class="small text-uppercase">Seongsan Sunrise Peak</span></a>
-                    <a class="nav-link mb-3 p-3 shadow" id="korea-pills-tab-5" data-toggle="pill" href="#korea-pills-5" role="tab" aria-controls="korea-pills-5" aria-selected="false">
+                    <a class="nav-link mb-3 p-4 shadow" id="korea-pills-tab-5" data-toggle="pill" href="#korea-pills-5" role="tab" aria-controls="korea-pills-5" aria-selected="false">
                         <span class="small text-uppercase">Namsan Seoul Tower</span></a>
-                    <a class="nav-link mb-3 p-3 shadow" id="korea-pills-tab-6" data-toggle="pill" href="#korea-pills-6" role="tab" aria-controls="korea-pills-6" aria-selected="false">
+                    <a class="nav-link mb-3 p-4 shadow" id="korea-pills-tab-6" data-toggle="pill" href="#korea-pills-6" role="tab" aria-controls="korea-pills-6" aria-selected="false">
                         <span class="small text-uppercase">Busan</span></a>
                 </div>
             </div>
-            <div class="col-md-9 pr-5">
+            <div class="col-lg-9 col-md-8 px-3">
                 <div class="tab-content h-100" id="v-pills-tabContent">
                     <div class="tab-pane fade rounded show active p-4 h-100" id="korea-pills-1" role="tabpanel" aria-labelledby="korea-pills-tab-1">
                         <h4 class="text-dark px-2 pb-5"><span class="bg-dark text-white px-2">Gyeongbokgung</span>  Palace</h4>
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-md-12 col-lg-8">
                                 <img src="assets/photo-1.jpg" alt="highlights1" class="w-100 rounded img-thumbnail">
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-12 col-lg-4 m-lg-0 m-3">
                                 <p class="text-dark font-italic"> Gyeongbokgung Palace was the main legal residence of
                                     the royal family during the Joseon dynasty. Carrying the meaning of “a place where
                                     the new king can enjoy prosperity of great blessings,” this was the first palace
@@ -135,10 +140,10 @@
                     <div class="tab-pane fade rounded p-4 h-100" id="korea-pills-2" role="tabpanel" aria-labelledby="korea-pills-tab-2">
                         <h4 class="text-dark px-2 pb-5"><span class="bg-dark text-white px-2">Bukchon Hanok</span>  Village</h4>
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-md-12 col-lg-8">
                                 <img src="assets/photo-2.jpg" alt="highlights2" class="w-100 rounded img-thumbnail">
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-12 col-lg-4 m-lg-0 m-3">
                                 <p class="text-dark font-italic">A representative attraction of Seoul, Bukchon Hanok
                                     Village shows the charm of Korea’s traditional buildings. Previously being the
                                     neighborhood where relatives of the royal family lived, the hanok here are grand,
@@ -150,10 +155,10 @@
                     <div class="tab-pane fade rounded p-4 h-100" id="korea-pills-3" role="tabpanel" aria-labelledby="korea-pills-tab-3">
                         <h4 class="text-dark px-2 pb-5"><span class="bg-dark text-white px-2">Myeongdong</span> Street</h4>
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-md-12 col-lg-8">
                                 <img src="assets/photo-3.jpg" alt="highlights3" class="w-100 rounded img-thumbnail">
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-12 col-lg-4 m-lg-0 m-3">
                                 <p class="text-dark font-italic"> The area of Myeong-dong is filled with unique street
                                     foods and plenty of things to see! A district of fashion and shopping, many young
                                     Koreans and international tourists seek out great deals and the latest trends. The
@@ -165,10 +170,10 @@
                     <div class="tab-pane fade rounded p-4 h-100" id="korea-pills-4" role="tabpanel" aria-labelledby="korea-pills-tab-4">
                         <h4 class="text-dark px-2 pb-5"><span class="bg-dark text-white px-2">Seongsan</span> "Sunrise Peak"</h4>
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-md-12 col-lg-8">
                                 <img src="assets/photo-4.jpg" alt="highlights4" class="w-100 rounded img-thumbnail">
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-12 col-lg-4 m-lg-0 m-3">
                                 <p class="text-dark font-italic"> Known as the “Sunrise Peak”, this 180 meters UNESCO
                                     World Heritage Site is great if you are looking to capture the perfect Korean
                                     sunrise photo. Seongsan Ilchulbong is actually an extinct volcano formed out of
@@ -180,10 +185,10 @@
                     <div class="tab-pane fade rounded p-4 h-100" id="korea-pills-5" role="tabpanel" aria-labelledby="korea-pills-tab-5">
                         <h4 class="text-dark px-2 pb-5"><span class="bg-dark text-white px-2">Namsan</span> Seoul Tower</h4>
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-md-12 col-lg-8">
                                 <img src="assets/photo-5.jpg" alt="highlights5" class="w-100 rounded img-thumbnail">
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-12 col-lg-4 m-lg-0 m-3">
                                 <p class="text-dark font-italic"> Seoul’s landmark attraction is none other than Namsan
                                     Seoul Tower, located atop Namsan Mountain in the center of the city. The tower
                                     draws in visitors year-round, and is most famous for its nightscape view of the city.
@@ -196,10 +201,10 @@
                     <div class="tab-pane fade rounded p-4 h-100" id="korea-pills-6" role="tabpanel" aria-labelledby="korea-pills-tab-6">
                         <h4 class="text-dark px-2 pb-5"><span class="bg-dark text-white px-2">Busan</span> city</h4>
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-md-12 col-lg-8">
                                 <img src="assets/photo-6.jpg" alt="highlights6" class="w-100 rounded img-thumbnail">
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-12 col-lg-4 m-lg-0 m-3">
                                 <p class="text-dark font-italic"> Home to majestic mountains, glistening beaches,
                                     steaming hot springs and fantastic seafood, South Korea’s second-largest city is
                                     a rollicking port town with tonnes to offer. From casual tent bars and chic designer
@@ -215,10 +220,12 @@
     </div>
 </section>
 
-<section id="food-drinks" class="food-drinks bg-dark py-5">
+<!-- Popular food and drinks -->
+
+<section id="food-drinks" class="food-drinks bg-dark p-5">
     <div class="container">
         <div class="card-deck">
-            <div class="card pb-5">
+            <div class="card pb-5 my-sm-3">
                 <img class="card-img-top border" src="./assets/food-1.jpg" alt="samgyetang">
                 <div class="card-body">
                     <h4 class="card-title">Samgyetang</h4>
@@ -229,7 +236,7 @@
                     <div class="heart m-n3"></div>
                 </div>
             </div>
-            <div class="card pb-5">
+            <div class="card pb-5 my-sm-3">
                 <img class="card-img-top border" src="./assets/food-2.jpg" alt="bibimbap">
                 <div class="card-body">
                     <h4 class="card-title">Bibimbap</h4>
@@ -240,7 +247,7 @@
                     <div class="heart m-n3"></div>
                 </div>
             </div>
-            <div class="card pb-5">
+            <div class="card pb-5 my-sm-3">
                 <img class="card-img-top border" src="./assets/food-3.jpg" alt="kimchi">
                 <div class="card-body">
                     <h4 class="card-title">Kimchi (fermented vegetables)</h4>
@@ -253,7 +260,7 @@
                     <div class="heart m-n3"></div>
                 </div>
             </div>
-            <div class="card pb-5">
+            <div class="card pb-5 my-sm-3">
                 <img class="card-img-top border" src="./assets/food-4.jpeg" alt="japchae">
                 <div class="card-body">
                     <h4 class="card-title">Japchae (stir-fried noodles)</h4>
@@ -268,7 +275,7 @@
         </div>
 
         <div class="card-deck mt-5">
-            <div class="card pb-5">
+            <div class="card pb-5 my-sm-3">
                 <img class="card-img-top border" src="./assets/drink-1.jpg" alt="sikye">
                 <div class="card-body">
                     <h4 class="card-title">Sikye</h4>
@@ -279,7 +286,7 @@
                     <div class="heart m-n3"></div>
                 </div>
             </div>
-            <div class="card pb-5">
+            <div class="card pb-5 my-sm-3">
                 <img class="card-img-top border" src="./assets/drink-2.jpg" alt="soju">
                 <div class="card-body">
                     <h4 class="card-title">Soju</h4>
@@ -290,7 +297,7 @@
                     <div class="heart m-n3"></div>
                 </div>
             </div>
-            <div class="card pb-5">
+            <div class="card pb-5 my-sm-3">
                 <img class="card-img-top border" src="./assets/drink-3.jpg" alt="makgeolli">
                 <div class="card-body">
                     <h4 class="card-title">Makgeolli</h4>
@@ -301,7 +308,7 @@
                     <div class="heart m-n3"></div>
                 </div>
             </div>
-            <div class="card pb-5">
+            <div class="card pb-5 my-sm-3">
                 <img class="card-img-top border" src="./assets/drink-4.jpg" alt="ginseang-tea">
                 <div class="card-body">
                     <h4 class="card-title">Ginseang tea</h4>
@@ -328,7 +335,7 @@
                     <p> Children born in South Korea are considered “one year old” when they are born, and will turn two
                         on the next Lunar New Year. 100 days after their birth, a celebration is held for the baby.</p>
                 </div>
-                <div class="carousel-item p-4">
+            <div class="carousel-item p-4">
                     <p>South Korea is the world leader in internet connectivity. Approximately 92% of the country’s
                         population are internet users, and they boast the world’s fastest average connection speed.</p>
                 </div>
@@ -379,24 +386,24 @@
 <section id="numbers" class="numbers parallax shadow border border-dark">
     <div class="container my-5">
         <div class="row">
-            <div class="numbers-col col-3 d-flex flex-column align-items-center">
+            <div class="numbers-col my-2 col-sm-6 col-md-3 d-flex flex-column align-items-center">
                 <i class="fas fa-users text-white my-5"></i>
                 <h5 class="text-white my-2">Population</h5>
                 <span class="text-white small">51,709,098</span>
             </div>
-            <div class="numbers-col col-3 d-flex flex-column align-items-center">
+            <div class="numbers-col my-2 col-sm-6 col-md-3 d-flex flex-column align-items-center">
                 <i class="fas fa-praying-hands text-white my-5"></i>
                 <h5 class="text-white my-2">Religion</h5>
                 <span class="text-white small">56.1% No religion</span>
                 <span class="text-white small">27.6% Christianity</span>
                 <span class="text-white small">15.5% Korean Buddhism</span>
             </div>
-            <div class="numbers-col col-3 d-flex flex-column align-items-center">
+            <div class="numbers-col my-2 col-sm-6 col-md-3 d-flex flex-column align-items-center">
                 <i class="fas fa-map-marker-alt text-white my-5"></i>
                 <h5 class="text-white my-2">Area</h5>
                 <span class="text-white small">100,363 km2</span>
             </div>
-            <div class="numbers-col col-3 d-flex flex-column align-items-center">
+            <div class="numbers-col my-2 col-sm-6 col-md-3 d-flex flex-column align-items-center">
                 <i class="fas fa-won-sign text-white my-5"></i>
                 <h5 class="text-white my-2">Currency</h5>
                 <span class="text-white small">Korean Republic won</span>
@@ -509,7 +516,7 @@
 <section id="newsletter" class="newsletter parallax bg-dark py-5 shadow border border-dark">
     <div class="container">
         <div class="row">
-            <div class="col-4 d-flex flex-column justify-content-center px-2">
+            <div class="col-lg-4 d-flex flex-column align-items-center align-items-lg-start px-2 my-5 my-lg-0">
                 <h2 class="display-4">
                     <small class="bg-dark text-white px-2">Want to</small> <br>
                     <span class="bg-light text-dark px-2"> know more?</span>
@@ -517,7 +524,7 @@
                 <small class="decoration-text w-50 text-white">Subscribe to our newsletter and receive
                     the recent news about South Korea.</small>
             </div>
-            <div class="col-8 d-flex flex-column justify-content-center align-items-center position-relative">
+            <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center position-relative">
                 <form class="d-flex w-100 justify-content-center needs-validation position-relative" novalidate>
                     <div class="form-group m-0 d-flex w-75">
                         <label for="email"></label>
@@ -526,10 +533,10 @@
                     </div>
                     <button type="submit" class="btn btn-danger btn-sm text-uppercase rounded-0">Send</button>
                 </form>
-                <div class="newsletter-alert alert alert-success position-absolute fade text-uppercase small">
+                <div class="newsletter-alert alert alert-success position-absolute fade text-uppercase small p-1 p-lg-3">
                     <strong>Thank you! </strong> Your email address has been added to our newsletter base.
                 </div>
-                <div class="newsletter-alert alert alert-danger position-absolute fade text-uppercase small">
+                <div class="newsletter-alert alert alert-danger position-absolute fade text-uppercase small p-1 p-lg-3">
                     <strong>Wrong email! </strong> Please try again.
                 </div>
             </div>
@@ -542,7 +549,7 @@
 <footer class="bg-dark text-white">
     <div class="container">
         <div class="row">
-            <div class="col-5 my-5 px-5">
+            <div class="col-12 col-lg-5 my-5 px-5">
                 <h4 class="font-italic"> <span class="bg-light text-dark px-2"> Discover</span> Korea</h4>
                 <p class="small w-75 my-4">Experience the extraordinary atmosphere of South Korea,
                     a beautiful country, whose landscapes enchant with incomparable beauty, an unique cuisine surprises with
@@ -559,32 +566,32 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3 my-5">
+            <div class="col-12 col-sm-6 col-lg-3 my-5 px-5 px-sm-0 px-xl-3">
                 <h4 class="font-italic text-uppercase">Instagram</h4>
-                <div class="ig-images d-flex flex-wrap my-4">
+                <div class="ig-images d-flex flex-wrap my-4 ">
                     <div class="col-6 p-0">
                         <a href="#">
-                            <img src="./assets/ig-1.jpg" alt="instagram-1" class="w-100">
+                            <img src="./assets/ig-1.jpg" alt="instagram-1">
                         </a>
                     </div>
                     <div class="col-6 p-0">
                         <a href="#">
-                            <img src="./assets/ig-2.jpg" alt="instagram-2" class="w-100">
+                            <img src="./assets/ig-2.jpg" alt="instagram-2">
                         </a>
                     </div>
                     <div class="col-6 p-0">
                         <a href="#">
-                            <img src="./assets/ig-3.jpg" alt="instagram-3" class="w-100">
+                            <img src="./assets/ig-3.jpg" alt="instagram-3">
                         </a>
                     </div>
                     <div class="col-6 p-0">
                         <a href="#">
-                            <img src="./assets/ig-4.jpg" alt="instagram-4" class="w-100">
+                            <img src="./assets/ig-4.jpg" alt="instagram-4">
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-4 my-5 px-5">
+            <div class="col-12 col-sm-6 col-lg-4 my-5 px-5">
                 <h4 class="font-italic text-uppercase">Navigation</h4>
                 <ul class="list-unstyled my-4 scrollNav">
                     <li class="small py-2">
