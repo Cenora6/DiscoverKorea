@@ -20,7 +20,7 @@ The idea for the project was based on the interests in South Korean culture. If 
 
 ### Installation:
 
--  ```git clone https://github.com/Cenora6/portfolio.git``` to clone the repository
+-  ```git clone https://github.com/Cenora6/DiscoverKorea.git``` to clone the repository
 - then you can open the website in the browser
 
 ### Preview
